@@ -1,10 +1,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Voyage-Bold";
-  src: url(fonts/Voyage-Bold.woff) format("woff");
+  src: url("../fonts/Voyage-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Voyage-Regular";
+  src: url("../fonts/Voyage-Regular.woff") format("woff");
 }
 
 body {
+  font-family: "Voyage-Regular", YuMincho, "Yu Mincho";
+}
+
+.fwn {
+  font-weight: normal;
+}
+
+.voyage-bold {
   font-family: "Voyage-Bold", YuMincho, "Yu Mincho";
 }
 
@@ -415,6 +428,7 @@ header .container .header-right .humberger-menu {
 .top .text-wrapper h2 {
   font-size: 40px;
   line-height: 85px;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 899px) {
@@ -607,6 +621,12 @@ header .container .header-right .humberger-menu {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .service .service-left .service-left-text-wrapper {
+    left: 30px;
+  }
+}
+
 .service .service-left .service-left-text-wrapper h2 {
   font-size: 62px;
   letter-spacing: 2px;
@@ -629,6 +649,12 @@ header .container .header-right .humberger-menu {
     position: static;
     padding-left: 50px;
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service .service-right {
+    padding-left: 20px;
   }
 }
 
